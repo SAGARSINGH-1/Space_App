@@ -1,6 +1,34 @@
 import { Link, NavLink } from 'react-router-dom'
 
 
+const crewData=[
+        {
+          key: 1,
+          title: "Post 1",
+          post: "Lorem ipsum...",
+          imgSrc: "image1.jpg"
+        },
+        {
+          key: 2,
+          title: "Post 2",
+          post: "Lorem ipsum...",
+          imgSrc: "image2.jpg"
+        },
+        {
+          key: 3,
+          title: "Post 3",
+          post: "Lorem ipsum...",
+          imgSrc: "image3.jpg"
+        },
+        {
+          key: 4,
+          title: "Post 4",
+          post: "Lorem ipsum...",
+          imgSrc: "image4.jpg"
+        }
+      
+    ]
+
 
 export default function Crew01() {
     return (
