@@ -2,7 +2,8 @@
 
 Welcome to the Space Explorer website, an interactive platform for space enthusiasts to explore the cosmos. This project is built using React, styled with Tailwind CSS, and powered by Vite.
 
-<img width="954" alt="image" src="https://github.com/SAGARSINGH-1/Space_App/assets/81561733/8d1e3604-730a-4b84-a90d-9b493549c5a2">
+<img width="954" alt="Screenshot 2023-09-28 234714" src="https://github.com/SAGARSINGH-1/Space_App/assets/81561733/9da2582f-3b63-4355-a56e-104dcc5c4e1a">
+
 
 ## Features
 
