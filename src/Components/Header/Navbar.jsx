@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <div className='mt-[30px] mx-[50px] flex flex-row justify-between  items-center h-[12vh]'>
             <Link to={''}>
-                <img className='w-[35px] mt-[15px]' src="./src/imgAssests/shared/logo.svg" alt="" />
+                <img className='w-[35px] mt-[15px]' src="/src/imgAssests/shared/logo.svg" alt="" />
             </Link>
             <div className='w-[60%] h-[100%] flex justify-center items-center backdrop-blur-md bg-opacity-5'>
                 <ul className='flex flex-row gap-10'>

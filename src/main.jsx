@@ -14,34 +14,28 @@ import DestinationEuropa from './Components/Destination/DestinationEuropa.jsx'
 import DestinationMars from './Components/Destination/DestinationMars.jsx'
 import Tech02 from './Components/Technology/Tech02.jsx'
 import Tech03 from './Components/Technology/Tech03.jsx'
-import Crew02 from './Components/Crew/Crew02.jsx'
-import Crew03 from './Components/Crew/Crew03.jsx'
-import Crew04 from './Components/Crew/Crew04.jsx'
 
 let src='src/imgAssests/technology/tech-bg.jpg';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='' element={<App />}>
-      <Route path='' element={<Home img={src} />}/>
-      <Route path='' element={<Home  img={src}/>}/>
-      <Route path='destination/moon' element={<DestinationMoon img={src} />}/>
-      <Route path='destination/titan' element={<DestinationTitan img={src}/>} />
-      <Route path='destination/europa' element={<DestinationEuropa img={src}/>} />
-      <Route path='destination/mars' element={<DestinationMars img={src}/>} />
-      <Route path='crew' element={<Crew01 img={src}/>} />
-      <Route path='crew/crew02' element={<Crew02 img={src}/>} />
-      <Route path='crew/crew03' element={<Crew03 img={src}/>} />
-      <Route path='crew/crew04' element={<Crew04 img={src}/>} />
-      <Route path='technology' element={<Tech01 img={src}/>} />
-      <Route path='technology/tech02' element={<Tech02 img={src}/>} />
-      <Route path='technology/tech03' element={<Tech03 img={src}/>} />
-      <Route path='*' element={<Error img={src}/>} />
+      <Route path='' element={<Home />}/>
+      <Route path='' element={<Home />}/>
+      <Route path='destination/moon' element={<DestinationMoon />}/>
+      <Route path='destination/titan' element={<DestinationTitan/>} />
+      <Route path='destination/europa' element={<DestinationEuropa/>} />
+      <Route path='destination/mars' element={<DestinationMars/>} />
+      <Route path='/crew' element={<Crew01/>} />
+      <Route path='technology' element={<Tech01/>} />
+      <Route path='technology/tech02' element={<Tech02/>} />
+      <Route path='technology/tech03' element={<Tech03/>} />
+      <Route path='*' element={<Error/>} />
     </Route>
   )
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  // </React.StrictMode>,
 ) 
