@@ -21,6 +21,7 @@ const router = createBrowserRouter(
     <Route path='' element={<App />}>
       <Route path='' element={<Home />}/>
       <Route path='' element={<Home />}/>
+      <Route path='destination' element={<DestinationMoon />}/>
       <Route path='destination/moon' element={<DestinationMoon />}/>
       <Route path='destination/titan' element={<DestinationTitan/>} />
       <Route path='destination/europa' element={<DestinationEuropa/>} />

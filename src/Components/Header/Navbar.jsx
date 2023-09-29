@@ -15,7 +15,7 @@ export default function Navbar() {
                        </NavLink> 
                     </li>
                     <li className='cursor-pointer relative'>
-                    <NavLink to={'/destination/moon'} className={({isActive})=>`${isActive? "pb-3 border-b-2 border-transparent border-white":"border-none"}`}>
+                    <NavLink to={'/destination'} className={({isActive})=>`${isActive? "pb-3 border-b-2 border-transparent border-white":"border-none"}`}>
                        02 DESTINATION
                        </NavLink>
                     </li>
