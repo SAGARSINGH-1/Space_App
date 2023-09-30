@@ -1,32 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
-export const crewData = [
-  {
-    key: 1,
-    name: "Douglas Hurley",
-    post: "Commander",
-    imgSrc: "/src/imgAssests/crew/crew01.png"
-  },
-  {
-    key: 2,
-    name: "MARK SHUTTLEWORTH",
-    post: "MISSION SPECIALIST",
-    imgSrc: "/src/imgAssests/crew/crew02.png"
-  },
-  {
-    key: 3,
-    name: "VICTOR GLOVER",
-    post: "PILOT",
-    imgSrc: "/src/imgAssests/crew/crew03.png"
-  },
-  {
-    key: 4,
-    name: "ANOUSHEH ANSARI",
-    post: "FLIGHT ENGINEER",
-    imgSrc: "/src/imgAssests/crew/crew04.png"
-  }
-];
+import { crewData } from '../Data/Data';
 
 export default function Crew01() {
   const [crewKey, setcrewKey] = useState(1);
@@ -70,8 +44,7 @@ export default function Crew01() {
             key={crew.key}
             to={`/crew`}
             onClick={() => crewHandler(crew.key)}
-            className={`w-[15px] h-[15px] hover:bg-gray-400 cursor-pointer bg-white border-2
-                       border-black rounded-full ${crewKey === crew.key ? 'bg-gray-400' : ''}`}
+            className={`${crew.key === crewKey ? 'bg-gray-500' : ""} w-[15px] h-[15px] hover:bg-gray-400 cursor-pointer bg-white rounded-full`}
           ></NavLink>
         ))}
       </div>
